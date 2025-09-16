@@ -15,7 +15,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   const user_auth = async (event) => {
-    event.preventDefault();
+    event.preventDefault(); 
     setLoading(true);
     if (signState === "Sign In") {
       await login(email, password);
